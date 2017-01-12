@@ -6,7 +6,11 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-
+/**
+ * HW2 Main to access city info 
+ * @author eparslow18
+ *
+ */
 public class CityTest{
 	public static void main(String[] args){
 
@@ -22,6 +26,7 @@ public class CityTest{
 		};
 		
 		city.setArrayOfPeople(personsArray);
+		city.setArrayOfBuildings(buildingsArray);
 		
 		//output buildings 
 		for (int i = 0; i <buildingsArray.length; i++){

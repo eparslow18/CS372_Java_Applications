@@ -17,16 +17,36 @@ int count = rand.nextInt(100);
 	public String getName(){
 	return this.name;
 	}
+	
+	/**
+	 * Set the string name of the Building object 
+	 * @param name
+	 */
 	public void setName(String name){
 		this.name = name;
 	}	
+	
+	/**
+	 * Access the string name of the Building object 
+	 * @return
+	 */
 		public String getAddress(){
 	return this.address;
 	}
+		
+	/**
+	 * Set the string address of the Building object 
+	 * @param address
+	 */
 	public void setAddress(String address){
 		this.address = address;
 	}	
 	
+	/**
+	 * Super Constructor for Building and all inheriting classes 
+	 * sets name of object from when object is declared 
+	 * @param name
+	 */
 	public Building(String name){
 		setName(name);
 		//System.out.printf("You are on building.java\n");

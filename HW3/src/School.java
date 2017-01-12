@@ -6,11 +6,16 @@ import java.util.Random;
 */
 public class School extends Building {
 
-ArrayList<String> CurrentOccupants = new ArrayList<String>(); //just like c++ vector 
 
-
+/**
+ * No argument constructor 
+ */
 public School (){}
 
+/**
+ * Constructor using super class Building 
+ * @param name
+ */
 public School(String name){ //call superclass and pass name through 
 	super(name);
 }

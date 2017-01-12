@@ -12,6 +12,8 @@ int age;
 String name;
 int phoneNum;
 int gradeLevel;
+String favCandy;
+String role;
 
 	public Person(){}
 
@@ -35,7 +37,12 @@ int gradeLevel;
 		return this.age;
 	}
 	
-	
+	public String getFavCandy(){
+		return this.favCandy;
+	}
+	public String getRole(){
+		return this.role;
+	}
 
 	public void setAge(int age){
 		this.age = age;

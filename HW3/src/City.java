@@ -83,6 +83,9 @@ public class City {
 		}
 	}
 	
+	/**
+	 * Function to pay employees base function
+	 */
 	public void payEmployees(){
 		
 	}
@@ -91,10 +94,21 @@ public class City {
 	 * Set an array of the people created in main
 	 * @param persons takes array of persons
 	 */
-	
 	public void setArrayOfPeople(Person[] persons){
+		this.persons.clear();
 		for (int i = 0; i <persons.length; i++){
 			this.persons.add(persons[i]);
+		}		
+	}
+	
+	/**
+	 * Set an array of the buildings created in main
+	 * @param buildings takes array of buildings
+	 */
+	public void setArrayOfBuildings(Building[] buildings){
+		this.buildings.clear();
+		for (int i = 0; i <buildings.length; i++){
+			this.buildings.add(buildings[i]);
 		}		
 	}
 	
@@ -104,5 +118,13 @@ public class City {
 	 */
 	public ArrayList<Person> getArrayofPeople(){
 		return persons;
+	}
+	
+	/**
+	 * Getter for returning the persons array of type Persons[]
+	 * @return persons array of persons
+	 */
+	public ArrayList<Building> getArrayofBuildings(){
+		return buildings;
 	}
 }

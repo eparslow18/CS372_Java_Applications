@@ -11,13 +11,27 @@ public class Police extends Person implements Employee{
 	int pay;
 	int inCityHall = rand.nextInt(2);
 
-	
+	/**
+	 * 
+	 */
 	public String getRole(){
 		return this.role;
 		}
+	/**
+	 * 
+	 * @param role
+	 */
+	public void setRole(String role){
+		this.role = role;
+	}
+	
+	/**
+	 * 
+	 */
 	public void setCity(String role){
 		this.role = role;
 		}
+	
 	/**
 	*Return if the officer is in city hall
 	*@return boolean is in city hall
@@ -45,6 +59,7 @@ public class Police extends Person implements Employee{
 	public Police(String name){ //call superclass and pass name through 
 		super(name);
 		setAge();
+		setRole("Sherrif");
 		}
 	
 	/**

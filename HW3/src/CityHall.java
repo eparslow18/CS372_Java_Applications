@@ -5,10 +5,15 @@ import java.util.ArrayList;
 */
 public class CityHall extends Building {
 
-ArrayList<String> CurrentOccupants = new ArrayList<String>(); //just like c++ vector 
-
+	/**
+	 * no argument constructor 
+	 */
 	public CityHall(){}
 	
+	/**
+	 * Contructer for class object CityHall calling super class constructor Building
+	 * @param name
+	 */
 	public CityHall(String name){ //call superclass and pass name through 
 		super(name);
 	}

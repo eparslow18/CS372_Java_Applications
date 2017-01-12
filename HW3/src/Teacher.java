@@ -15,17 +15,33 @@ public class Teacher extends Person implements Employee{
 	
 	boolean is;
 
+	/**
+	 * Access certification type string of teacher class
+	 * @return the teachers certification
+	 */
 	public String getCert(){
 		return this.certification;
 	}
+	
+	/**
+	 * Set certification of Teacher class object
+	 * @param certification
+	 */
 	public void setCert(String certification){
 		this.certification = certification;
 	}	
 
+	/**
+	 * Get gradeLevel int of Teacher Class Object
+	 */
 	public int getGradeLevel(){
 		return this.gradeLevel;
 	}
 
+	/**
+	 * Set gradeLevel string of Teacher class object
+	 * @param gradeLevel
+	 */
 	public void setGradeLevel(int gradeLevel){
 		this.gradeLevel = gradeLevel;
 	}
@@ -69,6 +85,9 @@ public class Teacher extends Person implements Employee{
 		return pay;
 	}
 	
+	/**
+	 * access employeeID from interface employee implemented in class Teacher
+	 */
 	public void getEmployeeID(){
 	}
 }

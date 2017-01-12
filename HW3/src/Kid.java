@@ -12,13 +12,25 @@ public class Kid extends Person{
 	int inSchool = rand.nextInt(2);
 	boolean is;
 	
+	
+	/**
+	 * Return a string of the kid class favorite candy
+	 */
 	public String getFavCandy(){
 	return this.favCandy;
 	}
+	
+	/**
+	 * Set a Kid's favorite candy
+	 * @param favCandy
+	 */
 	public void setFavCandy(String favCandy){
 		this.favCandy = favCandy;
 	}	
 	
+	/**
+	 * set the age of a Kid class
+	 */
 		public void setAge(){
 		this.age = age1;
 	}
@@ -46,6 +58,7 @@ public class Kid extends Person{
 	super(name);
 	setAge();
 	inSchool();
+	setFavCandy("Snickers");
 	}
 
 }
