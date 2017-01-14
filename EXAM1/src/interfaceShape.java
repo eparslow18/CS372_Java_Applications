@@ -48,19 +48,19 @@ public class interfaceShape {
 		ButtonOverride left = new ButtonOverride(shapesList.get(0));
 		for (int i = 0; i < shapesList.size(); i++){
 		if(shapesList.get(i) instanceof Square){	
-			String text = (shapesList.get(i).getKind() + " ID" +shapesList.get(i).getID() + " \n");
+			String text = (shapesList.get(i).getKind() + " ID:" +shapesList.get(i).getID() + " \n");
 			left.setText(text);
 			b.add(left);
 			left = new ButtonOverride(shapesList.get(i));
 			}
 		else if (shapesList.get(i) instanceof Circle){	
-			String text = ( shapesList.get(i).getKind() + " ID" +shapesList.get(i).getID() + " \n");
+			String text = ( shapesList.get(i).getKind() + " ID:" +shapesList.get(i).getID() + " \n");
 			left.setText(text);
 			b.add(left);
 			left = new ButtonOverride(shapesList.get(i));
 			}
 		else if (shapesList.get(i) instanceof Triangle){	
-			String text = (shapesList.get(i).getKind() + " ID" +shapesList.get(i).getID() + " \n");
+			String text = (shapesList.get(i).getKind() + " ID:" +shapesList.get(i).getID() + " \n");
 			left.setText(text);
 			b.add(left);
 			left = new ButtonOverride(shapesList.get(i));
@@ -70,6 +70,7 @@ public class interfaceShape {
 		}
 		b.add(left);
 		frame.add(b, BorderLayout.CENTER);
+		frame.revalidate();
 		
 		///////////////
 		//TO FINISH I NEED TO ALLOW ON CLICK DISPLAY THE INFO AND ASSOCIATED SHAPE IMAGE
